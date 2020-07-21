@@ -19,7 +19,7 @@ class Counter extends Component {
   }
 
   render() {
-    const { value, onIncrement, onDecrement } = this.props
+    const { value, onIncrement, onDecrement, squaring } = this.props
     return (
       <p>
         Clicked: {value} times
@@ -38,6 +38,10 @@ class Counter extends Component {
         {' '}
         <button onClick={this.incrementAsync}>
           Increment async
+        </button>
+        {' '}
+        <button onClick={squaring}>
+          Squaring 
         </button>
       </p>
     )
