@@ -12,7 +12,8 @@ const ProductsContainer = ({ products, addToCart }) => (
       <ProductItem
         key={product.id}
         product={product}
-        onAddToCartClicked={() => addToCart(product.id)} />
+        onAddToCartClicked={() => addToCart(product.id)}
+      />
     )}
   </ProductsList>
 )
